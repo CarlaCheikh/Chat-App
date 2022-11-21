@@ -25,7 +25,7 @@
 }
 
 body {
-    font-size: 16px;
+    font-size: 12px;
     font-family: 'Rubik', sans-serif;
     display: flex;
     justify-content: center;
@@ -55,8 +55,8 @@ body {
 
 @media (min-width: 700px) {
     .purple {
-        width: 30%;
-        height: 40%;
+        width: 26.5%;
+        height: 70%;
         left: -60px;
     }
 }
@@ -68,7 +68,7 @@ img {
 
 section:first-of-type {
     margin: 70px;
-    max-width: 380px;
+    max-width: 300px;
     min-width: 300px;
     z-index: 5;
     height: 30%;
@@ -96,7 +96,7 @@ section .container article:first-of-type::before {
    content: "";
    width: 150px;
    height: 20px;
-   left: 105px;
+   left: 59px;
    background-color: var(--White);
    position: absolute;
    border-bottom-left-radius: 10px;
@@ -142,15 +142,20 @@ section .container article:first-of-type .personalinfo .text {
     display: block;
     color: var(--Pale-Violet);
     position: relative;
+    margin-top: 10px;
+}
+
+section .container article:first-of-type .personalinfo .text p {
+    font-size: 12px;
 }
 
 section .container article:first-of-type .personalinfo .text::after {
     position: absolute;
     content: "\2807";
     color: var(--White);
-    left: 250px;
+    left: 180px;
     font-size: 20px;
-    top: 10px;
+    top: 2px;
     cursor: pointer;
 }
 
@@ -174,7 +179,7 @@ section article:last-of-type {
 }
 
 .leftchat p{
-    margin: 20px;
+    margin: 10px;
     background-color: var(--Dark-Grayish-Violet);
     width: 60%;
     border-radius: 15px;
@@ -201,15 +206,18 @@ section article:last-of-type {
 }
 
 .rightchat p {
-    margin: 10px 20px;
+    margin: 5px 10px;
     background-color: var(--White);
-    width: 60%;
     border-radius: 15px;
     padding: 10px;
 }
 
+.rightchat p:first-of-type {
+    width: 60%;
+}
+
 .leftchat .time .infotime {
-    margin: 20px;
+    margin: 10px;
     background-image:  linear-gradient(to right , var(--Light-Magenta), var(--Light-Violet));
     width: 60%;
     border-radius: 15px;
@@ -236,7 +244,7 @@ section article:last-of-type {
 }
 
 .leftchat .time .infotime span:last-of-type {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
     color: var(--White);
 }
@@ -247,10 +255,10 @@ form {
 form input[type=text] {
     border-radius: 20px;
     border: none;
-    margin: 20px;
-    padding: 20px;
+    margin: 0 10px 10px 10px;
+    padding: 10px;
     position: relative;
-    width: 90%;
+    width: 92%;
 }
 
 form input[type=text]::placeholder {
@@ -267,12 +275,13 @@ form button {
     background-color: var(--Very-Dark-Desaturated-Violet);
     color: var(--White);
     border-radius: 50%;
-    width: 30px;
-    bottom: 33px;
-    height: 30px;
+    width: 20px;
+    bottom: 20px;
+    height: 20px;
     padding: 5px;
+    padding: 2.5px 5px 2.5px 5px;
     border: none;
-    right: 30px;
+    right: 20px;
     position: absolute;
     z-index: 5;
 }
@@ -308,10 +317,10 @@ section:last-of-type p {
     content: "";
     position: absolute;
     background-color: var(--Pale-Violet);
-    width: 30%;
-    height: 50%;
+    width: 26.5%;
+    height: 70%;
     bottom: 0;
-    right: -40px;
+    right: 0;
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
 }
